@@ -154,7 +154,9 @@ SET experience_years =
     CASE
         WHEN user_id = (SELECT id FROM "USER" WHERE email='muscle@hexschooltest.io') THEN 2
         WHEN user_id = (SELECT id FROM "USER" WHERE email='starplatinum@hexschooltest.io') THEN 5
+        ELSE experience_years
     END;
+
 
 -- 3-4 刪除：新增一個專長 空中瑜伽 至 SKILL 資料表，之後刪除此專長。
 
