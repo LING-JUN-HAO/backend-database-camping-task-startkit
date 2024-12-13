@@ -152,7 +152,7 @@ INSERT INTO "COACH_LINK_SKILL" (coach_id, skill_id) VALUES
 UPDATE "COACH"
 SET experience_years = 
     CASE
-        WHEN user_id = (SELECT id FROM "USER" WHERE email='muscle@hexschooltest.io') THEN 2
+        WHEN user_id = (SELECT id FROM "USER" WHERE email='muscle@hexschooltest.io') THEN 3
         WHEN user_id = (SELECT id FROM "USER" WHERE email='starplatinum@hexschooltest.io') THEN 5
         ELSE experience_years
     END;
